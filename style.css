@@ -54,3 +54,22 @@
     visibility: hidden;
   }
 }
+.entering-world {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #151a2b;
+  align-items: center;
+  justify-content: center;
+}
+
+.entering-world.show {
+  display: flex;
+}
+
+.entering-world img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
