@@ -1,7 +1,30 @@
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 let entered=false,soundOn=false;const portal=$("#portal"),site=$("#site"),amb=$("#ambience"),open=$("#openSound"),arr=$("#arrival");
 function play(a,v=.2){if(!soundOn)return;try{a.volume=v;a.currentTime=0;a.play().catch(()=>{});}catch(e){}}
-$("#enter").onclick=()=>{if(entered)return;entered=true;portal.classList.add("leaving");play(open,.28);setTimeout(()=>{portal.style.display="none";site.classList.add("show");window.scrollTo(0,0);play(arr,.2);if(soundOn){amb.volume=.07;amb.play().catch(()=>{});}},2500)};
+$("#enter").onclick = () => {
+  portal.classList.add("leaving");
+  play(open, .28);
+
+  setTimeout(() => {
+    portal.style.display = "none";
+
+    const entering = document.getElementById("enteringWorld");
+    entering.classList.add("show");
+
+    setTimeout(() => {
+      entering.classList.remove("show");
+      site.classList.add("show");
+      window.scrollTo(0, 0);
+      play(arr, .2);
+
+      if (soundOn) {
+        amb.volume = .07;
+        amb.play().catch(() => {});
+      }
+    }, 2500);
+
+  }, 2500);
+};
 $("#sound").onclick=()=>{soundOn=!soundOn;$("#sound").textContent=soundOn?"♫ Sound on":"♫ Sound off";if(soundOn&&entered){amb.volume=.07;amb.play().catch(()=>{});}else amb.pause();};
 function go(id){$$(".page").forEach(p=>p.classList.remove("active"));$("#"+id).classList.add("active");$$("nav a").forEach(a=>a.classList.toggle("active",a.dataset.page===id));$("#nav").classList.remove("open");window.scrollTo({top:0,behavior:"smooth"});play(arr,.1);history.replaceState(null,"","#"+id);}
 $$("[data-page]").forEach(a=>a.onclick=e=>{e.preventDefault();go(a.dataset.page)});$$("[data-go]").forEach(b=>b.onclick=()=>go(b.dataset.go));$("#menu").onclick=()=>$("#nav").classList.toggle("open");$("#year").textContent=new Date().getFullYear();
