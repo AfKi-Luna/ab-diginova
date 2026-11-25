@@ -29,3 +29,28 @@
     visibility: hidden;
   }
 }
+/* Loading screen mobile and visibility fix */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #141a2a;
+  display: grid;
+  place-items: center;
+  opacity: 1;
+  animation: loadingScreenFade 0.7s ease 2.3s forwards;
+}
+
+.loading-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@keyframes loadingScreenFade {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
