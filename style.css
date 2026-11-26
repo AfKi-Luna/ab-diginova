@@ -146,3 +146,27 @@
   background: url("assets/images/blogs-page.png") center/cover no-repeat;
   min-height: 360px;
 }
+
+/* Desktop banner image visibility fix */
+@media (min-width: 851px) {
+  #academy .banner,
+  #store .banner,
+  #blogs .banner {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 480px;
+    padding: 90px 8%;
+  }
+
+  #home .hero {
+    width: 94%;
+    aspect-ratio: 1536 / 500;
+    margin: 25px auto;
+    background-size: 100% 100%;
+  }
+
+  .content {
+    max-width: 1250px;
+  }
+}
