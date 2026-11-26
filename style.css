@@ -131,3 +131,18 @@
     opacity: 1;
   }
 }
+/* DigiNova section artwork */
+#academy .banner {
+  background: url("assets/images/academy-banner.png") center/cover no-repeat;
+  min-height: 360px;
+}
+
+#store .banner {
+  background: url("assets/images/digital-store.png") center/cover no-repeat;
+  min-height: 360px;
+}
+
+#blogs .banner {
+  background: url("assets/images/blogs-page.png") center/cover no-repeat;
+  min-height: 360px;
+}
