@@ -73,3 +73,27 @@
   height: 100%;
   object-fit: contain;
 }
+/* DigiNova Home Page Banner */
+#home .hero {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  height: auto;
+  aspect-ratio: 1536 / 350;
+  background: url("assets/images/home-banner.png") center / 100% 100% no-repeat;
+  border: 1px solid #a995b9;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+#home .hero > * {
+  display: none !important;
+}
+
+@media (max-width: 620px) {
+  #home .hero {
+    width: 100%;
+    aspect-ratio: 1536 / 350;
+    border-radius: 10px;
+  }
+}
