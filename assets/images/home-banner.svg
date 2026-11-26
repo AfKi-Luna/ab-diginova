@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 520" role="img" aria-labelledby="title desc">
+<title id="title">A&amp;B DigiNova Home Banner</title><desc id="desc">Muted neon digital universe homepage banner with navigation, Afki and Bari illustration silhouettes, DigiNova logo and three feature cards.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#171b30"/><stop offset=".55" stop-color="#25233e"/><stop offset="1" stop-color="#172c3d"/></linearGradient>
+ <linearGradient id="neon" x2="1" y2="1"><stop stop-color="#a8c8d7"/><stop offset=".5" stop-color="#c6a6cb"/><stop offset="1" stop-color="#d7a9c5"/></linearGradient>
+ <linearGradient id="card" x2="0" y2="1"><stop stop-color="#35334d"/><stop offset="1" stop-color="#202d40"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#a68cb7" stop-opacity=".24"/><stop offset="1" stop-color="#a68cb7" stop-opacity="0"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+ <style>.script{font-family:'Brush Script MT','Segoe Script',cursive;font-style:italic}.sans{font-family:Arial, sans-serif}.muted{fill:#e8dce9}.line{stroke:url(#neon);stroke-width:2;fill:none}</style>
+</defs>
+<rect width="1920" height="520" rx="24" fill="url(#bg)"/>
+<ellipse cx="950" cy="270" rx="900" ry="300" fill="url(#glow)"/>
+<!-- distant digital skyline -->
+<g opacity=".68" fill="#627b9c" stroke="#b6a1c5" stroke-width="2">
+ <path d="M0 350V270h35v-48h25v128h38V240h27v110h38V285h35v65h45V225h26v125h42v-70h24v70h45v-95h26v95h70v-55h28v55h80v-85h28v85h60v-45h30v45h95v-80h25v80h80v-60h25v60h70v-100h28v100h75v-55h28v55h70v-120h30v120h60v-70h30v70h65v-90h25v90h85v-130h30v130h70v-80h30v80h60v-115h28v115h70v-75h28v75h65v-105h30v105h50v170H0z"/>
+</g>
+<g stroke="#9cb5ca" opacity=".35" stroke-width="2"><path d="M0 365H1920M0 405H1920M0 445H1920"/><path d="M120 365l-80 155M360 365l-40 155M650 365l-10 155M940 365l20 155M1250 365l50 155M1550 365l90 155M1810 365l70 155"/></g>
+<!-- header bar -->
+<rect x="24" y="18" width="1872" height="66" rx="33" fill="#171c30" fill-opacity=".92" stroke="#9d91ad" stroke-opacity=".65"/>
+<text x="62" y="64" class="script" font-size="43" fill="#ead9e8">A&amp;B DigiNova</text>
+<g class="sans" font-size="22" fill="#eee7ef" text-anchor="middle"><text x="850" y="59">Home</text><text x="970" y="59">Academy</text><text x="1090" y="59">Store</text><text x="1190" y="59">Blogs</text><text x="1290" y="59">About</text><text x="1390" y="59">Contact</text></g>
+<path d="M815 75h70" stroke="#d4a9c7" stroke-width="4" stroke-linecap="round"/>
+<g fill="none" stroke="#e9ddea" stroke-width="3"><circle cx="1500" cy="50" r="14"/><path d="M1510 61l13 13M1560 37c-20 0-20 28 0 28 20 0 20-28 0-28zM1615 35v28m-12-14h24"/><path d="M1670 40q18-18 36 0v22h-36z"/></g>
+<!-- left character scene -->
+<g transform="translate(55 100)">
+ <rect x="0" y="0" width="560" height="375" rx="26" fill="#1b263b" stroke="#9b91b2" stroke-opacity=".7"/>
+ <circle cx="270" cy="170" r="180" fill="url(#glow)"/>
+ <g fill="none" stroke="#9d9bb8" stroke-width="3" opacity=".7"><path d="M35 95h75v65H35zM430 55h90v70h-90z"/><path d="M55 115h35m-35 15h50m340-52h55m-55 16h40"/></g>
+ <!-- Afki hair/head -->
+ <path d="M115 320q-28-95 12-178 38-86 126-85 100 2 125 99 22 82-14 164l-42 36H150z" fill="#30253a" stroke="#a78ca8" stroke-width="5"/>
+ <ellipse cx="250" cy="172" rx="83" ry="104" fill="#d6a88e"/>
+ <path d="M166 155q-8-108 85-118 89 6 96 104-42-48-91-52-42 43-90 66z" fill="#4b3540"/>
+ <path d="M190 176q20-18 43 0m38 0q20-18 43 0" fill="none" stroke="#382a3a" stroke-width="6" stroke-linecap="round"/>
+ <g fill="none" stroke="#b7a5ce" stroke-width="7"><rect x="177" y="160" width="62" height="39" rx="16"/><rect x="264" y="160" width="62" height="39" rx="16"/><path d="M239 178h25"/></g>
+ <path d="M228 226q24 19 48 0" fill="none" stroke="#9d5f72" stroke-width="5" stroke-linecap="round"/>
+ <path d="M120 350q20-108 110-110 100 2 130 110v25H120z" fill="#34344f" stroke="#8f8aa8" stroke-width="4"/>
+ <path d="M110 135q-20-50 15-70m220 70q20-50-15-70" fill="none" stroke="#a8a0bd" stroke-width="14" stroke-linecap="round"/>
+ <!-- Bari -->
+ <g transform="translate(360 225)"><ellipse cx="65" cy="60" rx="83" ry="86" fill="#d8d1df" stroke="#b4a8c7" stroke-width="4"/><circle cx="38" cy="53" r="24" fill="none" stroke="#303047" stroke-width="8"/><circle cx="91" cy="53" r="24" fill="none" stroke="#303047" stroke-width="8"/><path d="M62 53h5" stroke="#303047" stroke-width="8"/><path d="M52 91q18 20 36 0" fill="none" stroke="#9a627c" stroke-width="7" stroke-linecap="round"/><rect x="37" y="117" width="58" height="31" rx="12" fill="#c4a36d"/><text x="66" y="139" class="sans" font-size="18" text-anchor="middle" fill="#302b3a">Bari</text></g>
+</g>
+<!-- central brand -->
+<g text-anchor="middle"><text x="960" y="230" class="script" font-size="125" fill="#d9b7cf">A&amp;B</text><text x="960" y="320" class="script" font-size="100" fill="#eee0ed">DigiNova</text><text x="960" y="365" class="sans" font-size="24" letter-spacing="3" fill="#d8d1df">LEARN  •  CREATE  •  SHOP  •  GROW</text><rect x="790" y="395" width="340" height="62" rx="31" fill="#353047" stroke="url(#neon)" stroke-width="3"/><text x="960" y="435" class="sans" font-size="25" fill="#f0e5ef">Explore DigiNova  →</text></g>
+<!-- feature cards -->
+<g class="sans" text-anchor="middle">
+ <g transform="translate(1320 118)"><path d="M30 0h205l35 40v210l-35 35H30L0 250V40z" fill="url(#card)" stroke="#a9a1c1" stroke-width="3"/><path d="M85 75h95l-47-35zM105 75v42m55-42v42m-55 0h55" class="line"/><text x="132" y="158" font-size="31" fill="#f0e7ef" font-weight="bold">Online</text><text x="132" y="194" font-size="31" fill="#f0e7ef" font-weight="bold">Academy</text><text x="132" y="228" font-size="19" fill="#d4cbdc">Build Skills</text><text x="132" y="253" font-size="19" fill="#d4cbdc">Design Your Future</text></g>
+ <g transform="translate(1595 118)"><path d="M30 0h205l35 40v210l-35 35H30L0 250V40z" fill="url(#card)" stroke="#a9a1c1" stroke-width="3"/><path d="M78 57h110l-10 83H92zM98 57l-12-24h-25m55 121a10 10 0 1 0 0 1m62-1a10 10 0 1 0 0 1" class="line"/><text x="132" y="178" font-size="31" fill="#f0e7ef" font-weight="bold">Digital Store</text><text x="132" y="218" font-size="19" fill="#d4cbdc">Creative Digital</text><text x="132" y="244" font-size="19" fill="#d4cbdc">Products &amp; Assets</text></g>
+ <g transform="translate(1765 118)"><path d="M30 0h125v250l-30 35H30L0 250V40z" fill="url(#card)" stroke="#a9a1c1" stroke-width="3"/><path d="M36 55q27-18 52 0v72q-25-18-52 0zM88 55q27-18 52 0v72q-25-18-52 0z" class="line"/><text x="78" y="178" font-size="29" fill="#f0e7ef" font-weight="bold">Blogs</text><text x="78" y="215" font-size="17" fill="#d4cbdc">Ideas • Guides</text><text x="78" y="239" font-size="17" fill="#d4cbdc">Lifestyle • Tech</text></g>
+</g>
+</svg>
