@@ -31,31 +31,20 @@ $$("[data-page]").forEach(a=>a.onclick=e=>{e.preventDefault();go(a.dataset.page)
 const cfg=window.DIGINOVA_CONFIG||{},num=(cfg.whatsappNumber||"").replace(/\D/g,""),msg=encodeURIComponent(cfg.message||"Hello, I would like to know more about DigiNova.");
 $$(".wa").forEach(a=>{if(num.length>=10&&!num.includes("X")){a.href="https://wa.me/"+num+"?text="+msg;a.target="_blank";a.rel="noopener"}else{a.href="#";a.onclick=e=>{e.preventDefault();alert("Please add your WhatsApp number in site-config.js before publishing.")}}});
 const c=$("#stars"),ctx=c.getContext("2d");let w,h,dpr,pts=[];function resize(){dpr=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;c.width=w*dpr;c.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);pts=Array.from({length:Math.min(45,Math.floor(w*h/20000))},()=>({x:Math.random()*w,y:Math.random()*h,v:.05+Math.random()*.1,s:1+Math.random()*2}));}function draw(){ctx.clearRect(0,0,w,h);for(const p of pts){p.y-=p.v;if(p.y<0)p.y=h;ctx.globalAlpha=.17;ctx.fillStyle="#c9b2d1";ctx.fillRect(p.x,p.y,p.s,p.s)}ctx.globalAlpha=1;requestAnimationFrame(draw)}resize();addEventListener("resize",resize);draw();
-// DigiNova opening animation sequence
+// DigiNova opening sequence
 window.addEventListener("load", () => {
   const loading = document.getElementById("loadingScreen");
   const activation = document.getElementById("portalActivation");
-  const entering = document.getElementById("enteringWorld");
 
   setTimeout(() => {
-    loading?.remove();
-
+    loading.style.display = "none";
     activation.classList.add("show");
 
     setTimeout(() => {
       activation.classList.remove("show");
       activation.style.display = "none";
+      document.getElementById("portal").style.display = "grid";
+    }, 1500);
 
-      entering.classList.add("show");
-
-      setTimeout(() => {
-        entering.classList.remove("show");
-        entering.style.display = "none";
-
-        document.getElementById("portal").style.display = "none";
-        document.getElementById("site").classList.add("show");
-      }, 2500);
-
-    }, 1000);
-  }, 1000);
+  }, 1500);
 });
