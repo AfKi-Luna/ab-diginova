@@ -50,3 +50,18 @@ window.addEventListener("load", () => {
 
   }, 3000);
 });
+// Make homepage cards fully clickable
+$$(".home-card").forEach(card => {
+  card.addEventListener("click", event => {
+    if (!event.target.closest("button")) {
+      go(card.dataset.go);
+    }
+  });
+
+  card.addEventListener("keydown", event => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      go(card.dataset.go);
+    }
+  });
+});
